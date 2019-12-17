@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+	<link href="Css/Home.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+</head>
+
+<body>
+	<div class="Home">
+		<div class="Top">
+			<div id="Logo">
+			</div>
+			<div class="Menu_top" id="Menu">
+				<a href="file:///E:/NCKH/Nedds_of_the_Business/Home.html" class="Menu_button">Trang Chủ</a>
+
+				<a href="#TuyenDung" class="Menu_button">Tuyển Dụng</a>
+
+				<a href="#ThucTap" class="Menu_button">Thực Tập</a>
+
+				<a href="#KiemTra" class="Menu_button">Kiểm Tra</a>
+
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					 <i class="fa fa-bars"></i>
+				</a>
+			</div>
+			<div id="Avarta" >
+				<a href="#Infor">
+					<img src="Image/user.png" alt="Avatar" class="Avatar">
+				</a>
+				
+			</div>
+			<div id="Language"> Languages:
+				<select class="pick_language">
+					<option value="VietNam">
+						Tiếng Việt
+					</option>
+					<option value="English">
+						English
+					</option>
+				</select>
+			</div>
+			
+		</div>	
+		<div class="Body">
+			<div class="Company-Ranking">
+			</div>
+			<div class="BackGround_Body">
+					<div class="Title_News"></div>
+					<div class="Image_body">
+						<div class="direction">
+							<i class="fa fa-chevron-circle-left" onClick="Back();"></i>
+							<i class="fa fa-chevron-circle-right" onClick="Next();" ></i>
+						</div>
+						<div class="Image_Stranfer">
+							<img src="Image/Image1.png" alt="1"  class="ContentImage" id="1">
+							<img src="Image/Image2.jpg" alt="2" class="ContentImage" id="2">
+							<img src="Image/Image3.jpg" alt="3" class="ContentImage" id="3">
+							<img src="Image/Image4.png" alt="4" class="ContentImage" id="4">
+							<img src="Image/Image5.jpg" alt="5" class="ContentImage" id="5">
+						</div>
+					</div>
+					<div class="Background-choose">
+						<input type="radio" name="Choose" id="img1" onClick="ClickChoose1();">
+						<input type="radio" name="Choose" id="img2" onClick="ClickChoose2();">
+						<input type="radio" name="Choose" id="img3" onClick="ClickChoose3();">
+						<input type="radio" name="Choose" id="img4" onClick="ClickChoose4();">
+						<input type="radio" name="Choose" id="img5" onClick="ClickChoose5();">
+
+					</div>
+		</div>
+			<div class="Learn-Ranking">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="Js/Media.js"></script>
+	<script type="text/javascript" src="Js/Transfer.js"></script>
+</body>
+</html>

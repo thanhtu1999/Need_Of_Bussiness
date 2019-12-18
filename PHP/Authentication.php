@@ -1,11 +1,11 @@
 <?php
 
-/*session_start();
+session_start();
  if(!isset($_SESSION["loggedin"])){
  header('Location:Login.html');
  exit();
  }
- */
+
 if(!isset($_POST['Username'],$_POST['Password'])){
     die('Vui lòng nhập User và Password');
 }
@@ -23,7 +23,7 @@ $query = "SELECT * FROM account WHERE ID='$username' AND Password='$password'";
 $results = mysqli_query($con, $query);
 
 if (mysqli_num_rows($results) == 1) {
-    $_SESSION["Username"] =$username;
+    $_SESSION["Username"] = $username;
     header('Location:../Home.html');
 }
 else {
